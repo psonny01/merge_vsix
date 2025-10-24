@@ -113,7 +113,7 @@ namespace merge_vsix
                     statusBar?.SetText($"Merge успешно: {from} → {to}");
 
                 var testFilePath = Path.Combine(repo.Info.WorkingDirectory, "test.txt");
-                File.AppendAllText(testFilePath, "LOCAL CHANGE FOR TEST\n");
+                File.AppendAllText(testFilePath, "REMOTE CHANGE FOR TEST\n");
             }
         }
 
