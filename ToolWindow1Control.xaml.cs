@@ -111,6 +111,9 @@ namespace merge_vsix
                     statusBar?.SetText($"Merge конфликт! {from} → {to}");
                 else
                     statusBar?.SetText($"Merge успешно: {from} → {to}");
+
+                var testFilePath = Path.Combine(repo.Info.WorkingDirectory, "test.txt");
+                File.AppendAllText(testFilePath, "LOCAL CHANGE FOR TEST\n");
             }
         }
 
