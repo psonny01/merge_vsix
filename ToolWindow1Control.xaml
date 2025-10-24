@@ -20,7 +20,7 @@
             <ComboBox x:Name="ToBranchCombo" Width="300" Height="25" Margin="0,0,0,10"/>
 
             <!-- Merge Button -->
-            <Button Content="Merge" Width="100" Height="30" />
+            <Button Content="Merge" Width="100" Height="30" Click="button1_Click" />
         </StackPanel>
     </Grid>
 </UserControl>
