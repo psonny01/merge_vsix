@@ -81,7 +81,7 @@ namespace merge_vsix
 
         private async Task MergeBranchesAsync(string from, string to)
         {
-
+            //11
             using (var repo = new Repository(repoPath))
             {
                 var previousBranchName = repo.Head.FriendlyName;
